@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    public class GenericList<T> where T : IComparable
+    public class GenericList<T> where T : IComparable, new()
     {
         public void Add(T name)
         {
             throw new NotImplementedException();
+        }
+
+        public void DoSomething()
+        {
+			var obj = new T();
         }
 
         public T this[int index]
