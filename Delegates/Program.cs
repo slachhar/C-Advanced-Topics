@@ -12,10 +12,16 @@ namespace Delegates
         {
             var processor = new PhotoProcessor();
             var filter = new PhotoFilters();
-            PhotoProcessor.PhotoFilterHandler filterHandler = filter.ApplyBrightness;
+            Action<Photo> filterHandler = filter.ApplyBrightness;
             filterHandler += filter.ApplyContrast;
+            filterHandler += RedEyeFilter;
             processor.Process("", filterHandler);
             Console.ReadLine();
+        }
+
+        public static void RedEyeFilter(Photo photo)
+        {
+            Console.WriteLine();
         }
     }
 }
