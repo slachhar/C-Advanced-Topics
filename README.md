@@ -8,3 +8,7 @@ They are just like a class but not a class. They are reference types.
 3. Then we invoke them which as a result will invoke all the assigned methods to a delegate.
 4. They are used for extension of the class methods without disturbing the existing class and also used for creating events.
 5. For extension, we invoke then in a class but assign methods which are also called subscribes, outside the class.
+
+EVENTS
+1. They follow a publisher subscriber pattern.
+2. It means you can only subscribe or unsubcribe from an event. But you cannot modify it.
