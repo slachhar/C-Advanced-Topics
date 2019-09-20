@@ -13,7 +13,9 @@ namespace EventsAndDelegates
             var video = new Video(){Title = "Lambhorgini"};
             var videoEncoder = new VideoEncoder(); //publisher
             var mailService = new MailService(); //subscriber
+            var smsService = new SmsService(); //subscriber
             videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += smsService.OnVideoEncoded;
             videoEncoder.Encode(video);
 
             Console.ReadLine();
