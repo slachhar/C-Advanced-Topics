@@ -12,3 +12,9 @@ They are just like a class but not a class. They are reference types.
 EVENTS
 1. They follow a publisher subscriber pattern.
 2. It means you can only subscribe or unsubcribe from an event. But you cannot modify it.
+
+PUB SUB
+1. Create an EventHandler in Main Class
+2. Invoke the event after putting null check for event reference. Invoke it after the method completion, where you want to notify the subscribers.
+3. Create reference for that event by assigning method signatures in the object.
+
