@@ -19,10 +19,6 @@ namespace ExceptionHandling
                 //    var video = 
                 //}
             }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine("Divide by zero");
-            }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);

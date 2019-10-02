@@ -19,5 +19,11 @@
 /LINQ/obj
 /NullableTypes/bin
 /NullableTypes/obj
+/AsynchronousProgramming_AsyncAwait/bin
+/AsynchronousProgramming_AsyncAwait/obj
+/Indexers/bin
+/Indexers/obj
+/IntermediateCSharp/bin
+/IntermediateCSharp/obj
 /ExceptionHandling/bin
 /ExceptionHandling/obj
